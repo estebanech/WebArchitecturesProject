@@ -1,0 +1,29 @@
+.contact {
+    margin: 20px;
+    height: auto;
+    width: 100%;
+    color: #650e0e;
+}
+
+.contact h1 {
+    margin: 0px;
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size:80px;
+}
+
+.contact-info{
+    margin-top: 0;
+    padding-left: 10%;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 620px) {
+    .contact h1 {
+        font-size:40px;
+    }
+
+    .contact-info{
+        font-size: 15px;
+    }
+}

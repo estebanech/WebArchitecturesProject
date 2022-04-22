@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/body.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/navbar.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/footer.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/contact.css')}}">
+
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a class="active" href="/">Pizza Rapids</a></li>
+                <li style="float:right"><a href="/contact">Contact us</a></li>
+                <li style="float:right"><a href="/menu">Menu</a></li>
+                <li style="float:right"><a href="/gallery">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="main_content">
+            <div class="contact">
+                <h1>Contact us</h1>
+                <div class="contact-info">
+                    <div>
+                        <h2>Open Hours</h2>
+                        <p>Monday-Friday</p>
+                        <p>8 a.m. - 9 p.m.</p>
+                        <p>Saturday</p>
+                        <p>10 a.m. - 7 p.m.</p>
+                    </div>
+                    {% if submited %}
+                        <h2>Thank you for your message.</h2>
+                    {% else %}
+                        <h2>Comments & Suggestions</h2>
+                        <form action="/contact" method = "POST" id="contactForm">
+                            <p>Name </p>
+                            <input type = "text" name = "Name" required/>
+                            <p>Comment or Suggestion</p>
+                            <textarea name="Message" form="contactForm"></textarea>
+                            <p><input type = "submit" value = "Submit" /></p>
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+            <df-messenger
+            chat-title="Pizza Rapids"
+            agent-id="026bbeb1-52db-49a0-84d6-6b8d32624290"
+            language-code="en"
+            ></df-messenger>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><p>Pizza Rapids</p></li>
+            </ul>
+        </div>
+    </body>
+</html>

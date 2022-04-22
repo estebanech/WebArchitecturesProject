@@ -1,0 +1,27 @@
+html, body {
+    overflow: auto;
+    min-height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: black;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/1029762053/thumb/5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+}
+
+.main_content {
+    padding: 30px;
+    margin: 0px;
+}
+
+df-messenger {
+    --df-messenger-bot-message: #650e0e;
+    --df-messenger-button-titlebar-color: #650e0e;
+    --df-messenger-chat-background-color: #fafafa;
+    --df-messenger-font-color: white;
+    --df-messenger-send-icon: #878fac;
+    --df-messenger-user-message: #650e0e;
+}

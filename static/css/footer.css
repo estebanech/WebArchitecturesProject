@@ -1,0 +1,31 @@
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.footer li {
+    float: left;
+}
+
+.footer li p {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 16px;
+}
+
+@media screen and (max-width: 800px) {
+    .footer ul {
+        font-size: 80%;
+    }
+}

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/body.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/splash.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/footer.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/navbar.css')}}">
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a class="active" href="/">Pizza Rapids</a></li>
+                <li style="float:right"><a href="/contact">Contact us</a></li>
+                <li style="float:right"><a href="/menu">Menu</a></li>
+                <li style="float:right"><a href="/gallery">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="main_content">
+            <div class="text-contaioner">
+                <h1>Pizza Rapids</h1>
+            </div>
+            <df-messenger
+            chat-title="Pizza Rapids"
+            agent-id="026bbeb1-52db-49a0-84d6-6b8d32624290"
+            language-code="en"
+            ></df-messenger>
+        </div>
+
+        <div class="footer">
+            <ul>
+                <li><p>Pizza Rapids</p></li>
+            </ul>
+        </div>
+    </body>
+</html>

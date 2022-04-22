@@ -1,0 +1,52 @@
+
+
+.menu {
+    margin: 20px;
+    width: 100%;
+    color: #650e0e;
+    height: auto;
+}
+
+.menu h1 {
+    margin: 0px;
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size:80px;
+}
+
+.menu ul {
+    margin-top: 0;
+    padding-left: 10%;
+    font-size: 20px;
+}
+.menu li {
+    display: flex;
+}
+
+.menu-title{
+    display: flex;
+    font-size:30px;
+}
+
+.menu-pizza{
+    width: 40%;
+}
+
+
+@media only screen and (max-width: 620px) {
+    .menu h1 {
+        font-size:40px;
+    }
+
+    .menu ul {
+        font-size: 15px;
+    }
+
+    .menu-title {
+        font-size: 20px;
+    }
+
+    .menu-pizza{
+        width: 50%;
+    }
+}

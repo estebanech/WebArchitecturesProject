@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/body.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/navbar.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/footer.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/gallery.css')}}">
+
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li><a class="active" href="/">Pizza Rapids</a></li>
+                <li style="float:right"><a href="/contact">Contact us</a></li>
+                <li style="float:right"><a href="/menu">Menu</a></li>
+                <li style="float:right"><a href="/gallery">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="main_content">
+            <div class="gallery">
+                <div class="img-container">
+                    <img src="https://mypizzacorner.com/wp-content/uploads/2020/03/la-pizza-napoletana.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/02ea0224-7316-406d-bb3d-5ed36e17a7b6/Derivates/85848d56-2911-4221-950f-b071d2d8fedf.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://www.tasteofhome.com/wp-content/uploads/2021/01/New-York-Style-Pizza_EXPS_FT20_105578_F_1217_1.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://static01.nyt.com/images/2018/12/05/dining/05kitchenrex1/merlin_147457287_3700e223-72be-4dd8-a70e-275066fd386f-articleLarge.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://www.healthyseasonalrecipes.com/wp-content/uploads/2019/12/greek-pizza-21-001.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://cdn.vox-cdn.com/thumbor/Yfmh_YGMAHTSezd3Lk9bxWRwdV0=/0x0:1200x630/1200x800/filters:focal(193x282:385x474)/cdn.vox-cdn.com/uploads/chorus_image/image/63873772/TheOriginalBBQChickenPizza_1200x630.0.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="https://res.cloudinary.com/hksqkdlah/image/upload/2042_sfs-stlouispizza-35-276389.jpg">
+                </div>
+            </div>
+            <df-messenger
+            chat-title="Pizza Rapids"
+            agent-id="026bbeb1-52db-49a0-84d6-6b8d32624290"
+            language-code="en"
+            ></df-messenger>
+        </div>
+
+        <div class="footer">
+            <ul>
+                <li><p>Pizza Rapids</p></li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+.gallery {
+    margin: 20px;
+    height: auto;
+    width: 100%;
+}
+
+.img-container {
+    padding: 10px;
+    float: left;
+    width: 23%;
+    height: 350px;
+}
+
+.img-container img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .img-container {
+        width: 30%;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .img-container {
+        width: 40%;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .img-container {
+        width: 40%;
+        height: 150px;
+    }
+}
